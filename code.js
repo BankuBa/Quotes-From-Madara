@@ -12,7 +12,9 @@ function changeText() {
     `Power is not will, it is the phenomenon of physically making things happen.`,
     `I taught you that in order to control people, you need to use the darkness in their hearts. And if there's no darkness, then you just create it…`,
   ];
-  document.getElementsByTagName(`p`)[0].innerHTML =  quotes[Math.floor(Math.random()*quotes.length)]
+  // document.getElementsByTagName(`p`)[0].innerHTML = quotes[index++]
+ document.getElementsByTagName(`p`)[0].innerHTML =
+   quotes[Math.floor(Math.random() * quotes.length)];
   if (index > quotes.length - 1)
     index=0
 
